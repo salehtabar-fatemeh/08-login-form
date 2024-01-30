@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login form</title>
+    <style>
+      *{
+        font-family: 'B Nazanin', Arial;
+      }
+      
+      body {
+        background-color: rgb(214 214 183);
+        text-align: center;
+
+      }
+      .form-title {
+        color: rgb(43, 61, 226);
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 110px;
+        margin-bottom: 20px;
+      }
+      
+      #submit {
+        background-color: rgb(110, 43, 173);
+        color: antiquewhite;
+        width: 300px;
+        height: 30px;
+        margin: 20px;
+        font-size: 20px;
+      }
+
+      #login {
+        color: blueviolet;
+        background-color: rgb(0, 217, 255);
+        width: 300px;
+        height: 30px;
+        font-size: 20px;
+        
+      }
+      .text-input {
+        margin: 10px;
+        width: 300px;
+        height: 30px;
+        font-size: 20px;
+      }
+
+      div a,p {
+        font-size: 20px;
+      }
+
+      div a {
+        color: blueviolet;
+        text-decoration: none;
+      }
+
+      div p {
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p class="form-title">ورود به سامانه</p>
+
+    <form method="post">
+      <input type="radio" id="nathional-code" name="login" />
+      <label for="nathional-code">ورود با کد ملی</label>
+      <span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>
+      <input type="radio" id="email" name="login" />
+      <label for="email">ورود با ایمیل</label><br />
+      <input
+        type="text"
+        placeholder="نام کاربری"
+        name="username"
+        class="text-input"
+      /><br />
+      <input
+        type="password"
+        placeholder="گذرواژه"
+        name="password"
+        class="text-input"
+      /><br />
+      <input type="submit" value="ورود" id="submit" /><br />
+      <span>-یا-</span><br />
+      <input
+        type="button"
+        value="ورود به گوگل"
+        id="login"
+        onclick="window.location.href='https://google.com'"
+      />
+    </form>
+    <div>
+      <p>
+        حساب کاربری ندارید؟
+        <a href="https://google.com">ثبت نام کنید</a>
+      </p>
+      <p>
+        گذرواژه را فراموش کرده اید؟
+        <a href="https://google.com">بازیابی گذرواژه</a>
+      </p>
+    </div>
+  </body>
+</html>
